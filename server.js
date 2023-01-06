@@ -13,7 +13,16 @@ app.use('/articles', articleRouter)
 
 // render method will use the object to pass data to the view
 app.get('/', (req, res) => {
-  res.render('index', { text: 'Hello!' })
+  const articles = [{
+    title: 'Test Article',
+    createdAt: Date.now(),
+    description: 'Test description'
+  }, {
+    title: 'Test Article 2',
+    createdAt: Date.now(),
+    description: 'Test description 2'
+  }]
+  res.render('index', { articles })
 })
 
 // listen method will start the server
