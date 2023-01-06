@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>README for Node.js, Express, EJS, and MongoDB Blog App</title>
+    <h1>Bloggy McBlogenstein</h1>
   </head>
   <body>
     <img src="https://www.onblastblog.com/wp-content/uploads/2017/08/blogger-logo.jpg" alt="Blog App Logo" height="100" width="100">
