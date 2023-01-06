@@ -3,7 +3,12 @@ const express = require('express')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  res.send('In articles')
+  const articles = [{
+    title: 'Test Article',
+    createdAt: Date.now(),
+    description: 'Test description'
+  }]
+  res.render('index', {articles})
   })
 
 module.exports = router

@@ -11,10 +11,12 @@ app.set('view engine', 'ejs')
 
 app.use('/articles', articleRouter)
 
+// render method will use the object to pass data to the view
 app.get('/', (req, res) => {
-  res.render('index')
+  res.render('index', { text: 'Hello!' })
 })
 
+// listen method will start the server
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`)
 })
